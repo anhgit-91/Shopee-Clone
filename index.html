@@ -44,7 +44,7 @@
                          </li>
                          <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fas fa-bell"></i>
+                                <i class="header__navbar-icon far fa-bell"></i>
                                 Notifications</a>
 
                             <div class="header__notify">
@@ -138,7 +138,9 @@
                     <div class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
-                            <div class="header__cart-list header__cart-list--empty-cart">
+                            <!-- <span class="header__cart-notice">3</span> -->
+                            <!-- Empty cart: header__cart-list--empty-cart -->
+                            <div class="header__cart-list header__cart-list--empty-cart ">
                                 <img src="./assets/img/empty-cart.png" alt="" class="header__cart-empty-cart-img">
                                 <span class="header__cart-list-empty-msg">Your shopping cart is empty<span>
                             </div>
@@ -152,8 +154,72 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="app__container">
+          <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__col-2">
+                  <nav class="category">
+                      <h3 class="category__heading">
+                          <i class="category__heading-icon fas fa-list"></i>
+                          Category
+                      </h3>
+                      
+                      <ul class="category-list">
+                          <li class="category-item category-item--active">
+                              <a href="#" class="category-item__link">Category A</a>
+                          </li>
+                          <li class="category-item">
+                              <a href="#" class="category-item__link">Category B</a>
+                          </li>
+                          <li class="category-item">
+                              <a href="#" class="category-item__link">Category C</a>
+                          </li>
+                      </ul>
+                  </nav>
+                </div>
+  
+                <div class="grid__col-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sort by</span>
+                        <button class="home-filter__btn btn btn--primary">Popular</button>
+                        <button class="home-filter__btn btn">Latest</button>
+                        <button class="home-filter__btn btn">Top Sales</button>
 
+                        <div class="select-input">
+                            <span class="select-input__label">Price</span>
+                            <i class="select-input-icon fas fa-chevron-down"></i>
+                           
+                            <!-- List options -->
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="#" class="select-input__link">Price: Low to High</a>
+                                </li>    
+                                <li class="select-input__item">                                  
+                                    <a href="#" class="select-input__link">Price: High to Low</a>
+                                </li>                            
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-num-current">1</span>/7
+                            </span>
+
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
 
         <footer class="footer">
