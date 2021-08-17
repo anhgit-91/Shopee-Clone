@@ -110,15 +110,39 @@
                             </g>
                         </svg>
                     </div>
+
+
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Search for products, brands and shops">
+                        <div class="header__search-ipunt-wrap">
+                            <input type="text" class="header__search-input" placeholder="Search for products, brands and shops">
+                            <!-- Search History -->
+                            <div class="header_search-history">
+                                <h3 class="header_search-history-heading">Search History</h3>
+                                <ul class="header_search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Xbox One</a>
+                                    </li>
+
+                                    <li class="header__search-history-item">
+                                        <a href="">Game Boy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fas fa-search"></i>
                         </button>
                     </div>
 
+                    <!-- Cart Layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-list header__cart-list--empty-cart">
+                                <img src="./assets/img/empty-cart.png" alt="" class="header__cart-empty-cart-img">
+                                <span class="header__cart-list-empty-msg">Your shopping cart is empty<span>
+                            </div>
+                        </div>                      
                     </div>
     
                 </div>
